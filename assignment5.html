@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators Example</title>
+    <style>
+        
+        .container p {
+            color: blue;
+        }
+
+        
+        .container > p {
+            font-weight: bold;
+        }
+
+        
+        section + p {
+            color: red;
+        }
+
+        
+        section ~ p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Main Title</h1>
+        <p>This paragraph is directly inside .container.</p>
+        <section>
+            <p>This paragraph is inside a section.</p>
+            <span>Inside section span</span>
+        </section>
+        <p>First paragraph after section.</p>
+        <p>Another paragraph after section.</p>
+    </div>
+</body>
+</html>
+
+
